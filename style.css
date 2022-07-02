@@ -111,7 +111,27 @@ header{
   position: relative;
   top: calc(13vw - 1px);
 }
-.card:hover, .education-card:hover {
+.project-card{
+  box-sizing: border-box;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  flex: 0 1 30%;
+  max-width: 28%;
+  height: calc(18vw - 2px); 
+  margin: 0.5rem;
+}
+.project-card-info{
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.1rem;
+  background: #304657;
+  color: white;
+  position: relative;
+  top: calc(10vw - 1px);
+  font-size: 0.75em;
+}
+.card:hover, .education-card:hover, .project-card:hover {
   border-radius: 1rem;
   box-shadow: 0 0 5px #53CBFF,
               0 0 25px #53CBFF,
@@ -121,7 +141,17 @@ header{
 .card div:hover{
   color: #6ac4eb;
 }
-
+.project-title a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+.project-title a {
+  background-image: url(assets/external-link-3.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding:  0 1.2em 0 0;
+}
 footer{
   background-color: #86dbff;
   border-top: 4px solid #53CBFF;
